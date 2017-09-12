@@ -151,12 +151,6 @@ nav li {
 	margin-bottom: 15px;
 }
 
-@media (max-width: 767px) {
-	.my-list {
-		text-align: center;
-	}
-}
-
 footer {
 	background: #111;
 }
