@@ -15,7 +15,6 @@ body {
 .navbar-toggle i {
 	font-size: 30px;
 	border: 1px solid #9d9d9d;
-	/*background: red;*/
 	padding: 5px 10px;
 	border-radius: 5px;
 	margin-top: 10px;
@@ -24,10 +23,6 @@ body {
 .navbar-toggle i:active {
 	color: #fff;
 	border-color: #fff;
-}
-
-.nabar-nav li {
-	margin:	0;
 }
 
 .my-background {
