@@ -224,9 +224,14 @@ footer p {
 		margin-top: 0;
 	}
 
-	ul.navbar-right {
+	.navbar-right {
 		margin: 0 auto;
 		float: none !important;
+	}
+}
 
+@media (min-width: 992px) {
+	.photo-2 .img-thumbnail {
+		width: 100%;
 	}
 }
