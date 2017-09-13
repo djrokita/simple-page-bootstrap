@@ -26,10 +26,9 @@ body {
 	border-color: #fff;
 }
 
-nav li {
+.nabar-nav li {
 	margin:	0;
 }
-
 
 .my-background {
 	background: #333;
@@ -46,7 +45,7 @@ nav li {
 }
 
 .navbar-inverse .navbar-brand:hover {
-		color: #9d9d9d;
+	color: #9d9d9d;
 }
 
 .navbar-inverse .navbar-brand:focus {
@@ -54,11 +53,11 @@ nav li {
 }
 
 .navbar-inverse .navbar-nav > li > a:hover {
-		color: #9d9d9d;
+	color: #9d9d9d;
 }
 
 .navbar-inverse .navbar-nav > li > a:focus {
-		color: #fff;
+	color: #fff;
 }
 
 .navbar-header .logo {
@@ -150,7 +149,7 @@ footer p {
 }
 
 @media (min-width: 768px) {
-	nav li {
+	.navbar-nav li {
 		margin: 25px 0;
 		background: #000;
 	}
@@ -210,9 +209,6 @@ footer p {
 		width: 100%;
 		text-align: center;
 		float: none;
-	}
-
-	.navbar-header {
 		margin-top: 30px;		
 	}
 
@@ -222,6 +218,10 @@ footer p {
 
 	nav ul {
 		display: inline-block;
+	}
+
+	.navbar-nav li {
+		margin-top: 0;
 	}
 
 	ul.navbar-right {

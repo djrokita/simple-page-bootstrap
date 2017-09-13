@@ -8,6 +8,11 @@ $font-white: #fff
 
 $dark: #333
 
+$breakpoint-tablet: 768px
+
+$breakpoint-screen: 991px
+
+
 =my-responsive()
 	height: 100%
 	width: 100%
@@ -44,13 +49,15 @@ body
 			color: $font-nav	
 		&:focus 
 			color: $font-white
-	.navbar-nav > li > a
-		&:hover
+	.navbar-nav > li
+		margin: 0
+		& > a:hover
 			color: $font-white
-		&:focus
+		& > a:focus
 			color: $font-white
 
-.navbar-header .logo
+.navbar-header
+	.logo
 		font-size: 4rem
 	p
 		padding-top: 5px
@@ -111,8 +118,8 @@ footer
 	p
 		text-align: center
 
-@media (min-width: 768px)
-	nav li
+@media (min-width: $breakpoint-tablet)
+	.navbar-nav li
 		margin: 25px 0
 		background: #000
 
@@ -147,14 +154,17 @@ footer
 		&:last-child
 			float: right
 
-@media (min-width: 768px) and (max-width: 991px)
+@media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-screen)
 	nav
 		text-align: center
 		ul
 			display: inline-block
-		&.navbar-right
-			margin: 0 auto
-			float: none !important
+			&.navbar-right
+				margin: 0 auto
+				float: none !important
+
+	.navbar-nav li
+		margin-top: 0
 
 	.navbar-header
 		width: 100%
